@@ -10,6 +10,4 @@ def get_html_theme_path():
 
 
 def setup(app):
-    #app.add_html_theme('sphinx_pdj_theme', get_html_theme_path())
-    rtd_locale_path = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'locale')
-    app.add_message_catalog('sphinx', rtd_locale_path)
+    app.add_html_theme('sphinx_pdj_theme', get_html_theme_path())
